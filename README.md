@@ -1,39 +1,30 @@
-# HoneyTRAPs
-# Honeypot Setup Script
+#This file is a Python script that sets up a honeypot network. A honeypot is a system that is designed to attract and collect data from attackers. The honeypot network in this script consists of the following components:
 
-This script sets up a honeypot network using the following tools:
+Honeyd: Honeyd is a network security monitor that can be used to simulate a real system. This makes it a valuable tool for detecting and analyzing attacks.
+Cowrie: Cowrie is a honeypot SSH server that can be used to collect data from attackers who attempt to log in to the server.
+Dionaea: Dionaea is a honeypot that can be used to collect data from attackers who attempt to exploit vulnerable services.
+Nginx: Nginx is a web server that can be used to serve the honeypot logs.
+Kismet: Kismet is a wireless network detector that can be used to monitor the honeypot network for attacks.
+To use this script, you will need to have the following installed:
 
-* Honeyd
-* Cowrie
-* Dionaea
-* Nginx
-* Kismet
+Python 3
+The following Python modules:
+os
+sys
+subprocess
+time
+The following system packages:
+honeyd
+cowrie
+dionaea
+nginx
+kismet-ng
+Once you have installed all of the required software, you can run the script by typing the following command:
 
-The script is for educational purposes only and should not be used for illegal or malicious activities.
+python3 setup_honeypot.py
 
-## How to Use
+The script will first check to see if all of the required dependencies are installed. If any dependencies are missing, the script will print an error message and exit.
 
-1. Clone the repository to your local machine.
-2. Run the script with the following command:
+If all of the dependencies are installed, the script will proceed to update the system and install the necessary honeypot components. Once the honeypot components are installed, the script will configure and start them.
 
-
-bash honeypot-setup.sh
-
-
-The script will download and install the necessary dependencies, configure the honeypots, and start them.
-
-## Configuration
-
-The script can be configured using the following environment variables:
-
-* **HONEYPOT_INTERFACE** - The network interface that the honeypots will listen on.
-* **HONEYPOT_LOG_DIR** - The directory where the honeypot logs will be stored.
-* **Kismet_INTERFACE** - The network interface that Kismet will listen on.
-
-## Troubleshooting
-
-If you have any problems running the script, please check the following:
-
-* Make sure that you have the necessary dependencies installed.
-* Make sure that the configuration variables are set correctly.
-* Check the logs for any errors.
+Once the honeypot network is up and running, the script will print a message indicating that the honeypot is up and running.
