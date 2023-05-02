@@ -1,4 +1,4 @@
-# Traps
+# HoneyTRAPs
 # Honeypot Setup Script
 
 This script sets up a honeypot network using the following tools:
